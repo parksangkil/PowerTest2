@@ -1,0 +1,25 @@
+ssh -v git@github.com
+ 
+ssh-add c:\Users\netive\.ssh\id_rsa
+
+
+
+ssh-keygen -t rsa -C "ht191@naver.com" 
+
+/c/Users/netive/.ssh/id_rsa
+
+ssh -i /c/Users/netive/.ssh/id_rsa git@github.com
+
+ssh -T git@github.com
+
+git config --global user.name "parksangkil" 
+git config --global user.email "ht191@naver.com" 
+
+git init
+git add <파일 이름>, git add *
+git commit -m "First Commit"
+git push origin master
+git remote add origin <원격 서버 주소> -> 만약 기존에 있던 원격 저장소를 복제한 것이 아니라면,
+원격 서버의 주소를 git에게 알려줘야 해요.
+
+git remote add origin https://github.com/parksangkil/PowerTest.git
